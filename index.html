@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive JavaScript Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Interactive Webpage Demo</h1>
+
+    <!-- Form with validation -->
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        
+        <button type="submit">Submit</button>
+    </form>
+
+    <!-- Button to toggle modal visibility -->
+    <button id="openModalBtn">Open Modal</button>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <h2>Welcome to the modal!</h2>
+            <p>This is an interactive modal dialog.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
